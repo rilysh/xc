@@ -1,0 +1,16 @@
+** xc
+Cut (X) character (C) from a valid ANSI string literal.
+
+** Usage
+#+begin_src text
+Usage:
+ -h    Prints this help message
+ -l    Specify how many non-pretyped characters to remove
+
+Pretypes:
+ [:alnum:], [:alpha:], [:blank:], [:cntrl:], [:digit:]
+ [:graph:], [:lower:], [:print:], [:punct:], [:space:]
+ [:htab:], [:vtab:], [:newline:], [:upper:], [:xdigit:]
+#+end_src
+
+e.g. xc -f input "l[:upper:][:blank:]"
